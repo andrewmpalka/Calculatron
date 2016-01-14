@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -48,18 +48,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjc-45-ONo">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wv9-gE-zPq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpL-uB-0dI">
                                         <rect key="frame" x="51" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NWo-JO-ArM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L4-BH-gGC">
                                         <rect key="frame" x="103" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="x"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6Y-UE-D2K"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kv-jm-Mdj">
                                         <rect key="frame" x="154" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="/"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFj-LA-Ijr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -77,6 +89,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="C8W-mQ-yOr" secondAttribute="trailing" id="qhe-S4-LIc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Operation" destination="qGJ-5B-dE0" id="nXe-4D-MG7"/>
+                        <outlet property="operandOne" destination="iGL-w6-MZ7" id="NQf-jO-bwZ"/>
+                        <outlet property="operandTwo" destination="IhA-fV-6DP" id="LqV-4w-nj7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

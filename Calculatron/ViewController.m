@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *operandOne;
+@property (weak, nonatomic) IBOutlet UILabel *Operation;
+@property (weak, nonatomic) IBOutlet UITextField *operandTwo;
 
 @end
 
@@ -17,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)onOperationTapped:(UIButton *)sender {
 }
 
 
