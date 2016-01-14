@@ -22,6 +22,19 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)onOperationTapped:(UIButton *)sender {
+    self.Operation.text = sender.titleLabel.text;
+    
+    NSString *operation = self.Operation.text;
+    
+    if ([operation isEqualToString:@"+"]) {
+        
+    } else if ([operation isEqualToString:@"-"]){
+        
+    } else if ([operation isEqualToString:@"x"]){
+        
+    } else {
+        
+    }
 }
 
 
